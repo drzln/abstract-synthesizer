@@ -1,2 +1,1 @@
 # abstract-synthesizer
-abstract-synthesizer

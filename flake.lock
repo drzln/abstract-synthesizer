@@ -1,0 +1,60 @@
+{
+  "nodes": {
+    "flake-utils": {
+      "locked": {
+        "lastModified": 1676283394,
+        "narHash": "sha256-XX2f9c3iySLCw54rJ/CZs+ZK6IQy7GXNY4nSOyu2QG4=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "3db36a8b464d0c4532ba1c7dda728f4576d6d073",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1677188778,
+        "narHash": "sha256-JINcCTZcl3PfxYkNOv7dnI5W5wHASkc0tFt4WElhim4=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "88c69a2fee315b62d6ba0cd24c5f645ea12d38b4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "nixpkgs": "nixpkgs",
+        "ruby-flake-utils": "ruby-flake-utils"
+      }
+    },
+    "ruby-flake-utils": {
+      "inputs": {
+        "flake-utils": "flake-utils"
+      },
+      "locked": {
+        "lastModified": 1677188621,
+        "narHash": "sha256-OCB2T8Gb7aFrEdr9UOm/aTvowXBaXWLB8X4pNJRLqTY=",
+        "owner": "t3rro",
+        "repo": "ruby-flake-utils",
+        "rev": "2e0a434139b25042a64e2bd0e67207671797be2b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "t3rro",
+        "repo": "ruby-flake-utils",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
