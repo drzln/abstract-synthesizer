@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require %(stitches/synthesizer/factory)
+require %(abstract-synthesizer)
 
 describe SynthesizerFactory do
   context %(create_synthesizer) do

@@ -58,8 +58,8 @@ class AbstractSynthesizer
   end
 
   def validate_args(args)
-    # if translation[:ancestors].empty?
-    #   raise NotEnoughResourceKeys unless args.length.eql?(2)
+    if translation[:ancestors].empty?
+      raise NotEnoughResourceKeys unless args.length.eql?(2)
     elsif !args.length.eql?(1)
       raise TooManyFieldValuesError
     end
