@@ -70,7 +70,7 @@ class AbstractSynthesizer
     method = method.to_sym
 
     validate_method(method, keys)
-    validate_args(args)
+    # validate_args(args)
 
     keys.each do |key|
       if key.eql?(translation[:context])
