@@ -6,7 +6,7 @@ require_relative %(./abstract-synthesizer/primitives/bury)
 class AbstractSynthesizer
   include Bury
 
-  attr_reader :translation
+  attr_reader :translation, :data
 
   def initialize(name: nil) # rubocop:disable Lint/UnusedMethodArgument
     @translation = {
@@ -14,6 +14,11 @@ class AbstractSynthesizer
       template: {},
       context: nil
     }
+  end
+
+  def load_synthesis_data(data)
+    @data = data
+    @data
   end
 
   def synthesis
