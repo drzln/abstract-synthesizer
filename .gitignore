@@ -12,3 +12,6 @@ pkg
 
 # remove .envrc
 .envrc
+
+# use flake direnv cache
+.direnv
