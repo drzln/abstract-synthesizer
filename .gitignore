@@ -1,7 +1,7 @@
-# ignore nix build result
+# nix build
 result
 
-# ignore bundle --path vendor/bundle
+# bundle --path vendor/bundle
 vendor
 
 # ignore bundle cache
