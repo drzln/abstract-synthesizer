@@ -9,6 +9,16 @@
     };
     version = "1.5.0";
   };
+  rake = {
+    groups = ["development"];
+    platforms = [];
+    source = {
+      remotes = ["https://rubygems.org"];
+      sha256 = "17850wcwkgi30p7yqh60960ypn7yibacjjha0av78zaxwvd3ijs6";
+      type = "gem";
+    };
+    version = "13.2.1";
+  };
   rspec = {
     dependencies = ["rspec-core" "rspec-expectations" "rspec-mocks"];
     groups = ["development"];
