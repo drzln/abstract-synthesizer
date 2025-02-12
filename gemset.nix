@@ -1,4 +1,13 @@
 {
+  abstract-synthesizer = {
+    groups = ["default"];
+    platforms = [];
+    source = {
+      path = ./.;
+      type = "path";
+    };
+    version = "0.0.7";
+  };
   ast = {
     groups = ["default" "development"];
     platforms = [];

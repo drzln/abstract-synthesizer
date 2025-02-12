@@ -1,3 +1,8 @@
+PATH
+  remote: .
+  specs:
+    abstract-synthesizer (0.0.7)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -48,6 +53,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  abstract-synthesizer!
   rake
   rspec
   rubocop
