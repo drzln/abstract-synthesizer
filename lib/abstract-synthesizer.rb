@@ -16,6 +16,10 @@ class AbstractSynthesizer
     }
   end
 
+  def clear_synthesis!
+    translation[:template] = nil
+  end
+
   def load_synthesis_data(data)
     @context_data = data
     @context_data
