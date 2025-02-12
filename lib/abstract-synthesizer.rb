@@ -17,7 +17,7 @@ class AbstractSynthesizer
   end
 
   def clear_synthesis!
-    translation[:template] = nil
+    translation[:template] = {}
   end
 
   def load_synthesis_data(data)
