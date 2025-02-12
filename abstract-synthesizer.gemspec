@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
   spec.license               = %(MIT)
   spec.files                 = `git ls-files`.split($OUTPUT_RECORD_SEPARATOR)
   spec.require_paths         = [%(lib)]
-  spec.required_ruby_version = %(2.7.7)
+  spec.required_ruby_version = %(3.6.6)
 
   definition = Bundler::Definition.build("Gemfile", "Gemfile.lock", nil)
   runtime_deps = definition.dependencies.select { |dep| dep.groups.include?(:default) }
