@@ -6,7 +6,7 @@
       path = ./.;
       type = "path";
     };
-    version = "0.0.7";
+    version = "0.0.8";
   };
   ast = {
     groups = ["default" "development"];
