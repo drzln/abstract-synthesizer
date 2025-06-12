@@ -1,7 +1,7 @@
-require_relative %(./abstract-synthesizer/errors/invalid_synthesizer_key_error)
-require_relative %(./abstract-synthesizer/errors/too_many_field_values)
-require_relative %(./abstract-synthesizer/errors/not_enough_resource_keys)
-require_relative %(./abstract-synthesizer/primitives/bury)
+require_relative %(abstract-synthesizer/errors/invalid_synthesizer_key_error)
+require_relative %(abstract-synthesizer/errors/too_many_field_values)
+require_relative %(abstract-synthesizer/errors/not_enough_resource_keys)
+require_relative %(abstract-synthesizer/primitives/bury)
 
 class AbstractSynthesizer
   include Bury
@@ -16,13 +16,8 @@ class AbstractSynthesizer
     }
   end
 
-  def clear_synthesis!
+  def clear!
     translation[:template] = {}
-  end
-
-  def load_synthesis_data(data)
-    @context_data = data
-    @context_data
   end
 
   def synthesis
@@ -36,6 +31,10 @@ class AbstractSynthesizer
       instance_eval(content)
     end
     self
+  end
+
+  def template
+    @translation[:template]
   end
 
   private
