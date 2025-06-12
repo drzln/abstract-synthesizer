@@ -6,7 +6,7 @@ require_relative %(lib/abstract-synthesizer/version)
 
 Gem::Specification.new do |spec|
   spec.name                  = %(abstract-synthesizer)
-  spec.version               = AbstractSynthesizer::VERSION
+  spec.version               = Meta::VERSION
   spec.authors               = [%(drzzln@protonmail.com)]
   spec.email                 = [%(drzzln@protonmail.com)]
   spec.description           = %(create resource based configuration DSL)
