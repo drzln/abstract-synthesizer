@@ -11,17 +11,17 @@ class AbstractSynthesizer
   def initialize(name: nil) # rubocop:disable Lint/UnusedMethodArgument
     @translation = {
       ancestors: [],
-      template: {},
+      manifest: {},
       context: nil
     }
   end
 
   def clear!
-    translation[:template] = {}
+    translation[:manifest] = {}
   end
 
   def synthesis
-    translation[:template]
+    translation[:manifest]
   end
 
   def synthesize(content = nil, &block)
@@ -33,8 +33,8 @@ class AbstractSynthesizer
     self
   end
 
-  def template
-    @translation[:template]
+  def manifest
+    @translation[:manifest]
   end
 
   private
@@ -85,7 +85,7 @@ class AbstractSynthesizer
         translation[:ancestors].append(method)
         yield if block_given?
         if args.length == 1
-          translation[:template].bury(*translation[:ancestors], args[0])
+          translation[:manifest].bury(*translation[:ancestors], args[0])
           translation[:ancestors].pop
         elsif args.empty?
           translation[:ancestors].pop
