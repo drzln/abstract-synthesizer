@@ -1,1 +1,0 @@
-class NotEnoughResourceKeys < StandardError; end

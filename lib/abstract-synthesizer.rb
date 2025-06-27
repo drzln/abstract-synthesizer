@@ -1,6 +1,6 @@
 require_relative %(abstract-synthesizer/errors/invalid_synthesizer_key_error)
 require_relative %(abstract-synthesizer/errors/too_many_field_values)
-require_relative %(abstract-synthesizer/errors/not_enough_resource_keys)
+
 require_relative %(abstract-synthesizer/primitives/bury)
 
 class AbstractSynthesizer
@@ -65,20 +65,14 @@ class AbstractSynthesizer
     raise InvalidSynthesizerKeyError, err_msg unless valid_method?(method, keys)
   end
 
-  def validate_args(args)
-    if translation[:ancestors].empty?
-      raise NotEnoughResourceKeys unless args.length.eql?(2)
-    elsif !args.length.eql?(1)
-      raise TooManyFieldValuesError
-    end
-  end
+  
 
   def abstract_method_missing(method, keys, *args)
     keys   = keys.map(&:to_sym)
     method = method.to_sym
 
     validate_method(method, keys)
-    validate_args(args)
+    
 
     keys.each do |key|
       if key.eql?(translation[:context])

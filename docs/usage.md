@@ -113,4 +113,4 @@ The gem provides specific error classes for common issues:
 
 - `InvalidSynthesizerKeyError`: Raised when you try to use a method in your DSL that was not included in the `keys` provided to `SynthesizerFactory.create_synthesizer`.
 - `TooManyFieldValuesError`: Raised when a field assignment method receives more than one argument.
-- `NotEnoughResourceKeys`: Raised when a resource definition does not receive the expected number of arguments (e.g., if a top-level resource expects two identifiers but only one is provided).
+

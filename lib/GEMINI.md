@@ -16,7 +16,7 @@ Key features and methods:
 - `manifest`: An alias for `synthesis`.
 - `valid_method?(method, keys)`: Internal method to check if a method call is valid within the current context (resource definition or field assignment).
 - `validate_method(method, keys)`: Raises `InvalidSynthesizerKeyError` if a method is not valid.
-- `validate_args(args)`: Validates the number of arguments based on the current context, raising `NotEnoughResourceKeys` or `TooManyFieldValuesError`.
+- `validate_args(args)`: Validates the number of arguments based on the current context, raising `TooManyFieldValuesError`.
 - `abstract_method_missing(method, keys, *args)`: This is the core of the DSL. It dynamically handles method calls, interpreting them as resource keys or field assignments, and building the `translation[:manifest]` accordingly. It uses the `Bury` module for nested data insertion.
 
 ## SynthesizerFactory Module
