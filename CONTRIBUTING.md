@@ -1,6 +1,8 @@
 # Contributing to Abstract Synthesizer
 
-Thank you for your interest in contributing to Abstract Synthesizer! We welcome contributions from everyone.
+> **📋 Navigation**: [Main README](README.md) | [Overview](docs/overview.md) | [Usage Guide](docs/usage.md) | [Examples](examples/) | **Contributing**
+
+Thank you for your interest in contributing to Abstract Synthesizer! We welcome contributions from everyone and appreciate your help in making this project better.
 
 ## Code of Conduct
 
@@ -91,3 +93,22 @@ If you have questions about contributing, feel free to:
 - Ask questions in your pull request
 
 We appreciate your contributions!
+
+---
+
+## 🔗 Project Resources
+
+- **[Main README](README.md)** - Project overview and quick start
+- **[Architecture Overview](docs/overview.md)** - Technical implementation details  
+- **[Usage Guide](docs/usage.md)** - Comprehensive usage patterns
+- **[Examples](examples/)** - Real-world examples and templates
+- **[Issues](https://github.com/drzln/abstract-synthesizer/issues)** - Bug reports and feature requests
+- **[Pull Requests](https://github.com/drzln/abstract-synthesizer/pulls)** - Code contributions
+
+## 💡 Contribution Ideas
+
+- **Examples**: Add DSLs for new domains (monitoring, security, networking, etc.)
+- **Documentation**: Improve guides, add tutorials, create video content
+- **Testing**: Increase test coverage, add performance benchmarks
+- **Features**: Enhance validation, add new output formats, improve error messages
+- **Ecosystem**: Create integrations with popular Ruby frameworks and tools
